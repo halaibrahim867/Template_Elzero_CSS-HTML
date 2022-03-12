@@ -1,0 +1,123 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --main-color:#14ccb4;
+    --background-color: #e9e2e2;
+    --second-color:#062f4b;
+    
+}
+header .continar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+/*large screen*/
+@media  (max-width:1100px){
+    header .continar{
+        width: 1170px;
+    }
+}
+/*medium screen*/
+@media  (max-width:992px){
+    header .continar{
+        width: 970px;
+    }
+}
+/*small screen*/
+@media  (max-width:768px){
+   header .continar{
+        width: 750px;
+    }
+}
+.continar .logo img {
+    width: 100px;
+    
+}
+.continar .list{
+    position: relative;
+}
+.continar .list .icon{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30px  ;
+    justify-content:flex-end; 
+  
+}
+.continar .icon span{
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: #777;
+}
+.continar .icon span:first-child{
+    width: 100%;
+}
+.continar .icon span:nth-child(2){
+    transition-duration: .3s;
+    width: 60%;
+}
+.continar .icon span:last-child{
+    width: 100%;
+}
+.continar .icon:hover span:nth-child(2){
+    width: 100%;
+    
+}
+.continar .list ul {
+    list-style: none;
+    position: absolute;
+    right:0;
+    padding: 0;
+    background-color: #f6f6f6;
+    min-width: 200px;
+    display: none;
+    z-index: 1;
+    transition-duration: .3s;
+}
+.continar .list ul::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0px;
+    top: -28px;
+    border-width: 15px;
+    border-style: solid;
+    border-color:transparent transparent #f6f6f6 transparent;
+}
+.continar .list:hover ul{
+    display: block;
+}
+.continar .list ul li {
+    padding: 15px;
+}
+.continar .list ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition-duration: .3s;
+} 
+.continar .list ul li a:hover{
+    padding-left: 15px;
+}
+@media (max-width:768px){
+    header .continar {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+}
+
+.continar .list ul li:not(:last-child) {
+    border-bottom: 1px solid #777;
+}
