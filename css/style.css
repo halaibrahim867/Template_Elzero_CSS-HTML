@@ -238,3 +238,35 @@ header .continar{
         display: none;
     }
 }
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+}
+.portfolio .product{
+    display:flex;
+    gap: 50px;
+
+}
+.portfolio .product div{
+    justify-content:center;
+    max-width: 300px;
+    
+}
+.portfolio .product  img{
+    width: 320px;
+}
+.portfolio .product h4 , 
+p{
+    margin-left:10px ;
+}
+.portfolio .product p{
+    line-height: 1.5;
+    color: #777;
+}
+@media (max-width:768px){
+    .portfolio .product{ 
+        
+        display: block;
+    }
+}
