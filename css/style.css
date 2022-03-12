@@ -121,7 +121,7 @@ header .continar{
 .continar .list ul li:not(:last-child) {
     border-bottom: 1px solid #777;
 }
-background{
+.background{
     background-image: url(../images/mountain.jpg);
     background-size: cover;
     height: 450px;
@@ -142,4 +142,99 @@ background{
 }
 .background .continar p{
     line-height: 1.8;
+}
+
+.second_main .feature_one {
+    display: grid;
+    grid-template-columns: repeat(3 ,300px);
+    padding: 20px; 
+    justify-content: space-evenly;
+    background-color: var(--background-color);  
+}
+
+.second_main .feature_one div{
+    text-align: center;
+    padding: 20px;
+}
+.second_main .feature_one div i{
+    color: var(--main-color);
+    font-size: 50px;
+    margin: auto;
+}
+.second_main .feature_one h3{
+    font-weight: 800px;
+}
+.second_main .feature_one div p {
+    color:#777;
+    line-height: 1.8;
+}
+@media (max-width:768px){
+    .second_main .feature_one {
+        display: block;
+    }
+}
+.special_heading{
+    padding: 20px;
+    text-align: center;
+}
+.special_heading .head{
+   color: var(--background-color);
+   font-weight:800;
+   font-size: 70px;
+}
+.special_heading .head +p{
+    margin-top: -20px;
+    color:#777;
+}
+.services .serv{
+    padding: 20px;
+    margin-left: 130px;
+    display: grid;
+    grid-template-columns: repeat(3 ,minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: space-evenly;
+}
+.services .serv .col{
+    max-width: 250px;
+}
+
+.services .serv .col i {
+    color: var(--main-color);
+    font-size: 35px;
+    flex-basis: 60px;
+}
+
+.services .serv div h3 {
+    margin-top: -33px;
+    margin-left: 50px;
+}
+.services .serv div p {
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-left: 53px;
+    color: #777;
+}
+.services .serv .col img{
+    position: relative;
+    height: 300px;
+
+}
+.services .serv .col img::after{
+    content: "";
+    background-color:var(--second-color);
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    right: 0;
+ 
+}
+@media (max-width:768px){
+    .services .serv {
+        display: block;
+        margin-left: 10px;
+    }
+    .services .serv .col img {
+        display: none;
+    }
 }
