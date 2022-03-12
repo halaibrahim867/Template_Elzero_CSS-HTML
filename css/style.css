@@ -121,3 +121,25 @@ header .continar{
 .continar .list ul li:not(:last-child) {
     border-bottom: 1px solid #777;
 }
+background{
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 0;
+}
+.background .continar{ 
+    max-width: 265px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.background .continar h1 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 42px;
+}
+.background .continar p{
+    line-height: 1.8;
+}
